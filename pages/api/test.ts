@@ -27,5 +27,5 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   const response = await execAsync("convert --version") + "";
-  res.json({ response });
+  res.send(response);
 }
